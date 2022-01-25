@@ -19,7 +19,7 @@ class CreateAlbumTable extends Migration
             $table->date('release_date');
             $table->string('collaboration_names');
             $table->text('song_text');
-            $table->decimal('price');
+            $table->integer('price');
             $table->timestamps();
         });
     }

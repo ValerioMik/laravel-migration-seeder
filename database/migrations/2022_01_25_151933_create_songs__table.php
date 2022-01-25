@@ -18,9 +18,9 @@ class CreateSongsTable extends Migration
             $table->string('song_name');
             $table->date('release_date');
             $table->string('reference_album');
-            $table->text('song_name');
+            $table->text('song_text');
             $table->bigInteger('records_sold');
-            $table->string('record company');
+            $table->string('record_company');
             $table->timestamps();
         });
     }
