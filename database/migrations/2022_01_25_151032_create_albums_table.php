@@ -15,11 +15,15 @@ class CreateAlbumsTable extends Migration
     {
         Schema::create('albums', function (Blueprint $table) {
             $table->id();
+            
             $table->string('name');
             $table->date('release_date');
+
             $table->string('collaboration_names');
             $table->text('song_text');
+
             $table->integer('price');
+
             $table->timestamps();
         });
     }
